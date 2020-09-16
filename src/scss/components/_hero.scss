@@ -2,36 +2,40 @@
   height: 80vh;
   background-color: var(--couleur-noir);
   position: relative;
+
+  video {
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+    opacity: 0.5;
+  }
+
+
+  h2 {
+    font-family: var(--font-secondaire);
+    font-size: 5rem;
+  }
 }
 
-.hero video{
-  width: 100%;
-  height: 100%;
+.hero .content {
+    height: 100%;
+    width: 100%;
 
-  object-fit: cover;
+    background: var(--degrade-principale);
+    color: var(--blanc);
 
-  opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
 }
-
-.hero .content{
-  width: 100%;
-  height: 100%;
-
-  color: var(--couleur-blanc);
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  background: var(--degrade-principale);
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-}
-
 .hero::after{
   content: "";
   width: 100%;
@@ -43,14 +47,10 @@
   z-index: 1;
 }
 
-.hero h2{
-  font-family: var(--font-secondaire);
-  font-size: 5rem;
-}
 
 .hero p, .hero a{
   font-size: 1.5rem;
-  color: var(--couleur-blanc);
+  color: var(--blanc);
 }
 
 .hero a:hover{

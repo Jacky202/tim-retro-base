@@ -1,19 +1,19 @@
 .cartes{
-  padding: 50px 0;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px 0;
+
+  img {
+    width: 150px;
+  }
 }
 
 .carte{
-  padding: 20px;
-  margin-bottom: 40px;
-
   width: 30%;
-  background: var(--couleur-blanc);
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-}
 
-.carte img{
-  width: 150px;
+  background: var(--blanc);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: 40px;
+  padding: 20px;
 }

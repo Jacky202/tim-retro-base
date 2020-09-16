@@ -1,16 +1,15 @@
 header{
   width: 100%;
+
+  background: var(--noir);
   position: fixed;
-  background: var(--couleur-noir);
   z-index: 3;
 }
 .header-principal h1{
-  margin: 0;
-  padding: 15px 0;
-
+  color: var(--blanc);
   font-family: var(--font-secondaire);
   font-size: 2.25rem;
   line-height: 43px;
-
-  color: var(--couleur-blanc);
+  margin: 0;
+  padding: 15px 0;
 }
